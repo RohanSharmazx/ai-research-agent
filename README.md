@@ -1,36 +1,32 @@
-````markdown
-# 🤖 AI Research Agent
+🤖 AI Research Agent
 
 An AI-powered research assistant that takes a question, searches the web for relevant information, and turns the findings into a structured research report with sources.
 
-I built this project to understand how AI agents work beyond simple chatbots — especially how multiple LLM-powered steps can work together to **plan, search, write, evaluate, and improve research**.
+I built this project to understand how AI agents work beyond simple chatbots — especially how multiple LLM-powered steps can work together to plan, search, write, evaluate, and improve research.
 
----
-
-## 💡 What does it do?
+💡 What does it do?
 
 You give the agent a research question such as:
 
-> What skills will be important for CSE students graduating in 2028?
+What skills will be important for CSE students graduating in 2028?
 
 The agent then:
 
-1. 🧠 **Plans** the research
-2. 🔍 **Searches** the web for relevant information
-3. ✍️ **Writes** a structured report
-4. 🔎 **Evaluates** the research
-5. 🔄 **Performs additional research** when needed
-6. 📚 **Returns the sources** used
+🧠 Plans the research
+🔍 Searches the web for relevant information
+✍️ Writes a structured report
+🔎 Evaluates the research
+🔄 Performs additional research when needed
+📚 Returns the sources used
 
 The goal isn't simply to generate an answer. The goal is to create a small research workflow where the agent can decide whether the available research is sufficient or whether it needs to investigate further.
 
 ---
 
-## 🏗️ How It Works
+🏗️ How It Works
 
 The application uses a LangGraph workflow to coordinate multiple stages of the research process.
 
-```text
                     User Question
                          │
                          ▼
@@ -53,7 +49,9 @@ The application uses a LangGraph workflow to coordinate multiple stages of the r
                Planner      Final Report
                   │
                   └──────► ...
-````
+
+The evaluator can send the workflow back to the Planner when more research is needed, allowing the agent to perform another research cycle before producing the final report.
+
 
 ### Research Flow
 
