@@ -22,6 +22,30 @@ The agent then:
 The goal isn't simply to generate an answer. The goal is to create a small research workflow where the agent can decide whether the available research is sufficient or whether it needs to investigate further.
 
 ---
+## 📸 Screenshots
+
+### 🏠 Application
+
+![AI Research Agent Homepage](screenshots/homepage.png)
+
+### 🔍 Research in Progress
+
+![Research in Progress](screenshots/researching.png)
+
+### 📄 Research Report
+
+![Research Report - Part 1](screenshots/report-1.png)
+
+![Research Report - Part 2](screenshots/report-2.png)
+
+![Research Report - Part 3](screenshots/report-3.png)
+
+![Research Report - Part 4](screenshots/report-4.png)
+
+![Research Report - Part 5](screenshots/report-5.png)
+
+---
+
 
 🏗️ How It Works
 
