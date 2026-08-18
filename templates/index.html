@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AI Research Agent</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🤖 AI Research Agent</h1>
+
+            <p>
+                Research complex topics using a multi-agent AI workflow
+                powered by LangGraph, FastAPI and web search.
+            </p>
+
+        </header>
+
+        <section class="search-box">
+
+            <textarea
+                id="question"
+                placeholder="e.g. Why are quantum computers difficult to build?"></textarea>
+
+            <button id="research-btn">
+                🔍 Research
+            </button>
+
+        </section>
+
+       <section id="loading" hidden>
+
+    <div class="spinner"></div>
+
+    <p id="loading-text">
+        Researching your question...
+    </p>
+
+</section>
+
+        <section id="report">
+
+            <h2>Report</h2>
+
+            <div id="report-content"></div>
+
+        </section>
+
+        <section id="sources">
+
+            <h2>Sources</h2>
+
+            <ul id="sources-list"></ul>
+
+        </section>
+
+    </div>
+
+    <!-- Load these AFTER the HTML exists -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
