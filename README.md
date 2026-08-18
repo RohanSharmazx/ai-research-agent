@@ -381,21 +381,6 @@ For important topics, always verify the final answer against the original source
 
 ---
 
-# 🔐 Security
-
-API keys and other sensitive information should never be committed to the repository.
-
-Use environment variables:
-
-```env
-YOUR_API_KEY=your_api_key_here
-```
-
-and keep `.env` in `.gitignore`.
-
-If you accidentally expose an API key on GitHub, **revoke/rotate it immediately**.
-
----
 
 # 📌 Project Status
 
@@ -457,6 +442,6 @@ I'm continuing to improve the project as I learn more about AI agents, retrieval
 
 If you find the project interesting, feel free to explore the code and suggest improvements.
 
-If you find it useful, consider giving the repository a ⭐.
+If you find it useful, consider giving the repository a ⭐
 
 ---
