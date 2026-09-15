@@ -1,1 +1,9 @@
-pip freeze > requirements.txt
+fastapi
+jinja2
+langgraph
+langchain
+langchain-core
+langchain-google-genai
+python-dotenv
+tavily-python
+pydantic
